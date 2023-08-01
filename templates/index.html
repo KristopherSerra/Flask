@@ -1,0 +1,28 @@
+{% extends 'layout.html'%}
+
+{% block title %} Trivia De Marvel {% endblock %}
+
+{% block links%}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+{% endblock%}
+
+{% block scrypt %} 
+<script src="static/scrypt.js"> </script>
+{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div id="pantalla-inicial">
+  <img src="static/Bienvenida.png" class="pantalla-inicial">
+  <br>
+  <button onclick="window.location='Facil'" class="btn facil"> FACIL </button>
+  <button onclick="window.location='Medio'" class="btn medio"> MEDIO </button>
+  <button onclick="window.location='Dificil'" class="btn dificil"> DIFICIL </button>
+  
+  </div>
+</div>
+{% endblock %}
+
